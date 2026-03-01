@@ -1,5 +1,7 @@
 # Coding is Gaming 🎮
 
+**[中文](README_CN.md) | [日本語](README_JP.md) | English**
+
 > A [peon-ping](https://github.com/peon-ping/peon-ping) voice pack that turns your Claude Code session into an RTS battlefield.
 
 Every time Claude thinks, finishes, asks a question, or hits an error — you hear a random voice from Red Alert, Warcraft III, StarCraft, or Portal. **470 sounds, 7 events, zero repetition boredom.**
