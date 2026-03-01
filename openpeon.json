@@ -1,0 +1,1923 @@
+{
+  "cesp_version": "1.0",
+  "name": "coding-is-gaming",
+  "display_name": "Coding is Gaming",
+  "version": "1.0.0",
+  "author": {
+    "name": "coding-is-gaming contributors",
+    "url": "https://github.com/coding-is-gaming"
+  },
+  "description": "470 sounds from Red Alert 2/3, C&C, Warcraft III, StarCraft, and Portal — randomized across 7 Claude Code events.",
+  "license": "see README",
+  "language": "en",
+  "categories": {
+    "session.start": {
+      "sounds": [
+        {
+          "file": "sounds/ra2a_battle control online.wav",
+          "label": "ra2a_battle control online.wav"
+        },
+        {
+          "file": "sounds/ra2s_battle control online.wav",
+          "label": "ra2s_battle control online.wav"
+        },
+        {
+          "file": "sounds/ra2a_establishing battle field control stand by.wav",
+          "label": "ra2a_establishing battle field control stand by.wav"
+        },
+        {
+          "file": "sounds/ra2s_establishing battle field control stand by.wav",
+          "label": "ra2s_establishing battle field control stand by.wav"
+        },
+        {
+          "file": "sounds/ra2a_reinforcements have arrived.wav",
+          "label": "ra2a_reinforcements have arrived.wav"
+        },
+        {
+          "file": "sounds/ra2s_reinforcements have arrived.wav",
+          "label": "ra2s_reinforcements have arrived.wav"
+        },
+        {
+          "file": "sounds/ra2a_unit ready.wav",
+          "label": "ra2a_unit ready.wav"
+        },
+        {
+          "file": "sounds/ra2s_unit ready.wav",
+          "label": "ra2s_unit ready.wav"
+        },
+        {
+          "file": "sounds/Aeva_EstablishingB.wav",
+          "label": "Aeva_EstablishingB.wav"
+        },
+        {
+          "file": "sounds/Seva_EstablishingB.wav",
+          "label": "Seva_EstablishingB.wav"
+        },
+        {
+          "file": "sounds/Ieva_EstablishingB.wav",
+          "label": "Ieva_EstablishingB.wav"
+        },
+        {
+          "file": "sounds/Aeva_ReinfHavArriv.wav",
+          "label": "Aeva_ReinfHavArriv.wav"
+        },
+        {
+          "file": "sounds/Seva_ReinfHavArriv.wav",
+          "label": "Seva_ReinfHavArriv.wav"
+        },
+        {
+          "file": "sounds/Ieva_ReinfHavArriv.wav",
+          "label": "Ieva_ReinfHavArriv.wav"
+        },
+        {
+          "file": "sounds/Aeva_RedAlertAct.wav",
+          "label": "Aeva_RedAlertAct.wav"
+        },
+        {
+          "file": "sounds/Svea_RedAlertAct.wav",
+          "label": "Svea_RedAlertAct.wav"
+        },
+        {
+          "file": "sounds/Ivea_RedAlertAct.wav",
+          "label": "Ivea_RedAlertAct.wav"
+        },
+        {
+          "file": "sounds/Geva_ReinfHavArriv.wav",
+          "label": "Geva_ReinfHavArriv.wav"
+        },
+        {
+          "file": "sounds/Neva_ReinfHavArriv.wav",
+          "label": "Neva_ReinfHavArriv.wav"
+        },
+        {
+          "file": "sounds/ccgs_reinforcements have arrived.wav",
+          "label": "ccgs_reinforcements have arrived.wav"
+        },
+        {
+          "file": "sounds/ccgs_unit ready.wav",
+          "label": "ccgs_unit ready.wav"
+        },
+        {
+          "file": "sounds/ra2u_kirov-kirov reporting.wav",
+          "label": "ra2u_kirov-kirov reporting.wav"
+        },
+        {
+          "file": "sounds/iborcra.wav",
+          "label": "iborcra.wav"
+        },
+        {
+          "file": "sounds/iborcre.wav",
+          "label": "iborcre.wav"
+        },
+        {
+          "file": "sounds/iborcrc.wav",
+          "label": "iborcrc.wav"
+        },
+        {
+          "file": "sounds/iborcrd.wav",
+          "label": "iborcrd.wav"
+        },
+        {
+          "file": "sounds/iborcrb.wav",
+          "label": "iborcrb.wav"
+        },
+        {
+          "file": "sounds/itapcra.wav",
+          "label": "itapcra.wav"
+        },
+        {
+          "file": "sounds/itapcrb.wav",
+          "label": "itapcrb.wav"
+        },
+        {
+          "file": "sounds/itapcrc.wav",
+          "label": "itapcrc.wav"
+        },
+        {
+          "file": "sounds/itapcrd.wav",
+          "label": "itapcrd.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiCrea.wav",
+          "label": "AUTanya_VoiCrea.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiCreb.wav",
+          "label": "AUTanya_VoiCreb.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiCrec.wav",
+          "label": "AUTanya_VoiCrec.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiCrea.wav",
+          "label": "SUNatas_VoiCrea.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiCreb.wav",
+          "label": "SUNatas_VoiCreb.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiCrec.wav",
+          "label": "SUNatas_VoiCrec.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiCreatea.wav",
+          "label": "SUNatas_VoiCreatea.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiCreateb.wav",
+          "label": "SUNatas_VoiCreateb.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiCreatec.wav",
+          "label": "SUNatas_VoiCreatec.wav"
+        },
+        {
+          "file": "sounds/iyupcrd.wav",
+          "label": "iyupcrd.wav"
+        },
+        {
+          "file": "sounds/iyuprea.wav",
+          "label": "iyuprea.wav"
+        },
+        {
+          "file": "sounds/iyupreb.wav",
+          "label": "iyupreb.wav"
+        },
+        {
+          "file": "sounds/iyuprec.wav",
+          "label": "iyuprec.wav"
+        },
+        {
+          "file": "sounds/iyupred.wav",
+          "label": "iyupred.wav"
+        },
+        {
+          "file": "sounds/peon_PeonReady1.wav",
+          "label": "peon_PeonReady1.wav"
+        },
+        {
+          "file": "sounds/peon_PeonWhat1.wav",
+          "label": "peon_PeonWhat1.wav"
+        },
+        {
+          "file": "sounds/peon_PeonWhat3.wav",
+          "label": "peon_PeonWhat3.wav"
+        },
+        {
+          "file": "sounds/peas_PeasantReady1.wav",
+          "label": "peas_PeasantReady1.wav"
+        },
+        {
+          "file": "sounds/peas_PeasantWhat1.wav",
+          "label": "peas_PeasantWhat1.wav"
+        },
+        {
+          "file": "sounds/peas_PeasantWhat2.wav",
+          "label": "peas_PeasantWhat2.wav"
+        },
+        {
+          "file": "sounds/bcruis_BattlecruiserOperational.mp3",
+          "label": "bcruis_BattlecruiserOperational.mp3"
+        },
+        {
+          "file": "sounds/bcruis_AllCrewsReporting.mp3",
+          "label": "bcruis_AllCrewsReporting.mp3"
+        },
+        {
+          "file": "sounds/bcruis_ShieldsUp.mp3",
+          "label": "bcruis_ShieldsUp.mp3"
+        },
+        {
+          "file": "sounds/kerry_KerriganReporting.mp3",
+          "label": "kerry_KerriganReporting.mp3"
+        },
+        {
+          "file": "sounds/kerry_ImReady.mp3",
+          "label": "kerry_ImReady.mp3"
+        },
+        {
+          "file": "sounds/glados_Hello.mp3",
+          "label": "glados_Hello.mp3"
+        },
+        {
+          "file": "sounds/glados_IKnowYoureThere.mp3",
+          "label": "glados_IKnowYoureThere.mp3"
+        }
+      ]
+    },
+    "task.acknowledge": {
+      "sounds": [
+        {
+          "file": "sounds/ibormoa.wav",
+          "label": "ibormoa.wav"
+        },
+        {
+          "file": "sounds/ibormob.wav",
+          "label": "ibormob.wav"
+        },
+        {
+          "file": "sounds/ibormoc.wav",
+          "label": "ibormoc.wav"
+        },
+        {
+          "file": "sounds/ibormod.wav",
+          "label": "ibormod.wav"
+        },
+        {
+          "file": "sounds/ibormoe.wav",
+          "label": "ibormoe.wav"
+        },
+        {
+          "file": "sounds/iborata.wav",
+          "label": "iborata.wav"
+        },
+        {
+          "file": "sounds/iboratb.wav",
+          "label": "iboratb.wav"
+        },
+        {
+          "file": "sounds/iboratc.wav",
+          "label": "iboratc.wav"
+        },
+        {
+          "file": "sounds/iboratd.wav",
+          "label": "iboratd.wav"
+        },
+        {
+          "file": "sounds/iborate.wav",
+          "label": "iborate.wav"
+        },
+        {
+          "file": "sounds/iboratta.wav",
+          "label": "iboratta.wav"
+        },
+        {
+          "file": "sounds/iborattb.wav",
+          "label": "iborattb.wav"
+        },
+        {
+          "file": "sounds/itanmoa.wav",
+          "label": "itanmoa.wav"
+        },
+        {
+          "file": "sounds/itanmob.wav",
+          "label": "itanmob.wav"
+        },
+        {
+          "file": "sounds/itanmoc.wav",
+          "label": "itanmoc.wav"
+        },
+        {
+          "file": "sounds/itanmod.wav",
+          "label": "itanmod.wav"
+        },
+        {
+          "file": "sounds/itanmoe.wav",
+          "label": "itanmoe.wav"
+        },
+        {
+          "file": "sounds/itanmof.wav",
+          "label": "itanmof.wav"
+        },
+        {
+          "file": "sounds/itanata.wav",
+          "label": "itanata.wav"
+        },
+        {
+          "file": "sounds/itanatb.wav",
+          "label": "itanatb.wav"
+        },
+        {
+          "file": "sounds/itanatc.wav",
+          "label": "itanatc.wav"
+        },
+        {
+          "file": "sounds/itanatd.wav",
+          "label": "itanatd.wav"
+        },
+        {
+          "file": "sounds/itanatta.wav",
+          "label": "itanatta.wav"
+        },
+        {
+          "file": "sounds/itanattb.wav",
+          "label": "itanattb.wav"
+        },
+        {
+          "file": "sounds/itapmoa.wav",
+          "label": "itapmoa.wav"
+        },
+        {
+          "file": "sounds/itapmob.wav",
+          "label": "itapmob.wav"
+        },
+        {
+          "file": "sounds/itapmoc.wav",
+          "label": "itapmoc.wav"
+        },
+        {
+          "file": "sounds/itapmod.wav",
+          "label": "itapmod.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiMova.wav",
+          "label": "AUTanya_VoiMova.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiMovb.wav",
+          "label": "AUTanya_VoiMovb.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiMovc.wav",
+          "label": "AUTanya_VoiMovc.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiMovd.wav",
+          "label": "AUTanya_VoiMovd.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiMove.wav",
+          "label": "AUTanya_VoiMove.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiMovf.wav",
+          "label": "AUTanya_VoiMovf.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiMovg.wav",
+          "label": "AUTanya_VoiMovg.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiMovh.wav",
+          "label": "AUTanya_VoiMovh.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiMovi.wav",
+          "label": "AUTanya_VoiMovi.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiMovAtka.wav",
+          "label": "AUTanya_VoiMovAtka.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiMovAtkb.wav",
+          "label": "AUTanya_VoiMovAtkb.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiMovAtkc.wav",
+          "label": "AUTanya_VoiMovAtkc.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiMovAtkd.wav",
+          "label": "AUTanya_VoiMovAtkd.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiMovAtke.wav",
+          "label": "AUTanya_VoiMovAtke.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiMovAtkf.wav",
+          "label": "AUTanya_VoiMovAtkf.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiMovAtkg.wav",
+          "label": "AUTanya_VoiMovAtkg.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiMovAtkh.wav",
+          "label": "AUTanya_VoiMovAtkh.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiAtka.wav",
+          "label": "AUTanya_VoiAtka.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiAtkb.wav",
+          "label": "AUTanya_VoiAtkb.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiAtkc.wav",
+          "label": "AUTanya_VoiAtkc.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiAtkd.wav",
+          "label": "AUTanya_VoiAtkd.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiAtke.wav",
+          "label": "AUTanya_VoiAtke.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiAtkf.wav",
+          "label": "AUTanya_VoiAtkf.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiAtkg.wav",
+          "label": "AUTanya_VoiAtkg.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiMova.wav",
+          "label": "SUNatas_VoiMova.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiMovb.wav",
+          "label": "SUNatas_VoiMovb.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiMovc.wav",
+          "label": "SUNatas_VoiMovc.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiMovd.wav",
+          "label": "SUNatas_VoiMovd.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiMove.wav",
+          "label": "SUNatas_VoiMove.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiMovf.wav",
+          "label": "SUNatas_VoiMovf.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiMovg.wav",
+          "label": "SUNatas_VoiMovg.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiMovh.wav",
+          "label": "SUNatas_VoiMovh.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiMovi.wav",
+          "label": "SUNatas_VoiMovi.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiMovAtka.wav",
+          "label": "SUNatas_VoiMovAtka.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiMovAtkb.wav",
+          "label": "SUNatas_VoiMovAtkb.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiMovAtkc.wav",
+          "label": "SUNatas_VoiMovAtkc.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiMovAtkd.wav",
+          "label": "SUNatas_VoiMovAtkd.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiMovAtke.wav",
+          "label": "SUNatas_VoiMovAtke.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiMovAtkf.wav",
+          "label": "SUNatas_VoiMovAtkf.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiMovAtta.wav",
+          "label": "SUNatas_VoiMovAtta.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiMovAttb.wav",
+          "label": "SUNatas_VoiMovAttb.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiMovAttc.wav",
+          "label": "SUNatas_VoiMovAttc.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiMovAttd.wav",
+          "label": "SUNatas_VoiMovAttd.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiMovAtte.wav",
+          "label": "SUNatas_VoiMovAtte.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiMovAttf.wav",
+          "label": "SUNatas_VoiMovAttf.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiAtka.wav",
+          "label": "SUNatas_VoiAtka.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiAtkb.wav",
+          "label": "SUNatas_VoiAtkb.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiAtkc.wav",
+          "label": "SUNatas_VoiAtkc.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiAtkd.wav",
+          "label": "SUNatas_VoiAtkd.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiAtke.wav",
+          "label": "SUNatas_VoiAtke.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiAtkf.wav",
+          "label": "SUNatas_VoiAtkf.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiAtkg.wav",
+          "label": "SUNatas_VoiAtkg.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiAttacka.wav",
+          "label": "SUNatas_VoiAttacka.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiAttackb.wav",
+          "label": "SUNatas_VoiAttackb.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiAttackc.wav",
+          "label": "SUNatas_VoiAttackc.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiAttackd.wav",
+          "label": "SUNatas_VoiAttackd.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiAttacke.wav",
+          "label": "SUNatas_VoiAttacke.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiAttackf.wav",
+          "label": "SUNatas_VoiAttackf.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiAttackg.wav",
+          "label": "SUNatas_VoiAttackg.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiAtkSpca.wav",
+          "label": "SUNatas_VoiAtkSpca.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiAtkSpcb.wav",
+          "label": "SUNatas_VoiAtkSpcb.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiAtkSpcc.wav",
+          "label": "SUNatas_VoiAtkSpcc.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiAtkSpcd.wav",
+          "label": "SUNatas_VoiAtkSpcd.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiAtkSpce.wav",
+          "label": "SUNatas_VoiAtkSpce.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiAtkSpcf.wav",
+          "label": "SUNatas_VoiAtkSpcf.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiAtkSpcg.wav",
+          "label": "SUNatas_VoiAtkSpcg.wav"
+        },
+        {
+          "file": "sounds/iyurmoa.wav",
+          "label": "iyurmoa.wav"
+        },
+        {
+          "file": "sounds/iyurmob.wav",
+          "label": "iyurmob.wav"
+        },
+        {
+          "file": "sounds/iyurmoc.wav",
+          "label": "iyurmoc.wav"
+        },
+        {
+          "file": "sounds/iyurmod.wav",
+          "label": "iyurmod.wav"
+        },
+        {
+          "file": "sounds/iyurata.wav",
+          "label": "iyurata.wav"
+        },
+        {
+          "file": "sounds/iyuratb.wav",
+          "label": "iyuratb.wav"
+        },
+        {
+          "file": "sounds/iyuratc.wav",
+          "label": "iyuratc.wav"
+        },
+        {
+          "file": "sounds/iyuratd.wav",
+          "label": "iyuratd.wav"
+        },
+        {
+          "file": "sounds/iyurate.wav",
+          "label": "iyurate.wav"
+        },
+        {
+          "file": "sounds/iyupmoa.wav",
+          "label": "iyupmoa.wav"
+        },
+        {
+          "file": "sounds/iyupmob.wav",
+          "label": "iyupmob.wav"
+        },
+        {
+          "file": "sounds/iyupmoc.wav",
+          "label": "iyupmoc.wav"
+        },
+        {
+          "file": "sounds/iyupmod.wav",
+          "label": "iyupmod.wav"
+        },
+        {
+          "file": "sounds/iyupmoe.wav",
+          "label": "iyupmoe.wav"
+        },
+        {
+          "file": "sounds/iyupmof.wav",
+          "label": "iyupmof.wav"
+        },
+        {
+          "file": "sounds/iyupmog.wav",
+          "label": "iyupmog.wav"
+        },
+        {
+          "file": "sounds/iyupata.wav",
+          "label": "iyupata.wav"
+        },
+        {
+          "file": "sounds/iyupatb.wav",
+          "label": "iyupatb.wav"
+        },
+        {
+          "file": "sounds/iyupatc.wav",
+          "label": "iyupatc.wav"
+        },
+        {
+          "file": "sounds/iyupatd.wav",
+          "label": "iyupatd.wav"
+        },
+        {
+          "file": "sounds/iyupate.wav",
+          "label": "iyupate.wav"
+        },
+        {
+          "file": "sounds/iyupatf.wav",
+          "label": "iyupatf.wav"
+        },
+        {
+          "file": "sounds/iyupatg.wav",
+          "label": "iyupatg.wav"
+        },
+        {
+          "file": "sounds/iyurat1a.wav",
+          "label": "iyurat1a.wav"
+        },
+        {
+          "file": "sounds/iyurat2a.wav",
+          "label": "iyurat2a.wav"
+        },
+        {
+          "file": "sounds/peon_PeonYes1.wav",
+          "label": "peon_PeonYes1.wav"
+        },
+        {
+          "file": "sounds/peon_PeonYes2.wav",
+          "label": "peon_PeonYes2.wav"
+        },
+        {
+          "file": "sounds/peon_PeonYes3.wav",
+          "label": "peon_PeonYes3.wav"
+        },
+        {
+          "file": "sounds/peon_PeonYes4.wav",
+          "label": "peon_PeonYes4.wav"
+        },
+        {
+          "file": "sounds/peon_PeonYesAttack1.wav",
+          "label": "peon_PeonYesAttack1.wav"
+        },
+        {
+          "file": "sounds/peon_PeonYesAttack2.wav",
+          "label": "peon_PeonYesAttack2.wav"
+        },
+        {
+          "file": "sounds/peon_PeonYesAttack3.wav",
+          "label": "peon_PeonYesAttack3.wav"
+        },
+        {
+          "file": "sounds/peas_PeasantYes1.wav",
+          "label": "peas_PeasantYes1.wav"
+        },
+        {
+          "file": "sounds/peas_PeasantYes2.wav",
+          "label": "peas_PeasantYes2.wav"
+        },
+        {
+          "file": "sounds/peas_PeasantYes3.wav",
+          "label": "peas_PeasantYes3.wav"
+        },
+        {
+          "file": "sounds/peas_PeasantYes4.wav",
+          "label": "peas_PeasantYes4.wav"
+        },
+        {
+          "file": "sounds/peas_PeasantYesAttack1.wav",
+          "label": "peas_PeasantYesAttack1.wav"
+        },
+        {
+          "file": "sounds/peas_PeasantYesAttack2.wav",
+          "label": "peas_PeasantYesAttack2.wav"
+        },
+        {
+          "file": "sounds/bcruis_MakeItHappen.mp3",
+          "label": "bcruis_MakeItHappen.mp3"
+        },
+        {
+          "file": "sounds/bcruis_SetACourse.mp3",
+          "label": "bcruis_SetACourse.mp3"
+        },
+        {
+          "file": "sounds/bcruis_Engage.mp3",
+          "label": "bcruis_Engage.mp3"
+        },
+        {
+          "file": "sounds/kerry_IGotcha.mp3",
+          "label": "kerry_IGotcha.mp3"
+        },
+        {
+          "file": "sounds/kerry_ThinkingSameThing.mp3",
+          "label": "kerry_ThinkingSameThing.mp3"
+        },
+        {
+          "file": "sounds/kerry_BeAPleasure.mp3",
+          "label": "kerry_BeAPleasure.mp3"
+        },
+        {
+          "file": "sounds/kerry_IReadYou.mp3",
+          "label": "kerry_IReadYou.mp3"
+        },
+        {
+          "file": "sounds/glados_Yes.mp3",
+          "label": "glados_Yes.mp3"
+        },
+        {
+          "file": "sounds/glados_KeepDoing.mp3",
+          "label": "glados_KeepDoing.mp3"
+        },
+        {
+          "file": "sounds/glados_Fantastic.mp3",
+          "label": "glados_Fantastic.mp3"
+        },
+        {
+          "file": "sounds/glados_Excellent.mp3",
+          "label": "glados_Excellent.mp3"
+        }
+      ]
+    },
+    "task.complete": {
+      "sounds": [
+        {
+          "file": "sounds/ra2a_construction complete.wav",
+          "label": "ra2a_construction complete.wav"
+        },
+        {
+          "file": "sounds/ra2s_construction complete.wav",
+          "label": "ra2s_construction complete.wav"
+        },
+        {
+          "file": "sounds/ra2a_unit ready.wav",
+          "label": "ra2a_unit ready.wav"
+        },
+        {
+          "file": "sounds/ra2s_unit ready.wav",
+          "label": "ra2s_unit ready.wav"
+        },
+        {
+          "file": "sounds/ra2a_unit promoted.wav",
+          "label": "ra2a_unit promoted.wav"
+        },
+        {
+          "file": "sounds/ra2s_unit promoted.wav",
+          "label": "ra2s_unit promoted.wav"
+        },
+        {
+          "file": "sounds/Aeva_ConComplete.wav",
+          "label": "Aeva_ConComplete.wav"
+        },
+        {
+          "file": "sounds/Seva_ConComplete.wav",
+          "label": "Seva_ConComplete.wav"
+        },
+        {
+          "file": "sounds/Ieva_ConComplete.wav",
+          "label": "Ieva_ConComplete.wav"
+        },
+        {
+          "file": "sounds/Geva_ConCompleteb.wav",
+          "label": "Geva_ConCompleteb.wav"
+        },
+        {
+          "file": "sounds/Neva_ConCompletea.wav",
+          "label": "Neva_ConCompletea.wav"
+        },
+        {
+          "file": "sounds/ccgs_construction complete.wav",
+          "label": "ccgs_construction complete.wav"
+        },
+        {
+          "file": "sounds/ccgs_unit ready.wav",
+          "label": "ccgs_unit ready.wav"
+        },
+        {
+          "file": "sounds/ccgs_unit promoted.wav",
+          "label": "ccgs_unit promoted.wav"
+        },
+        {
+          "file": "sounds/itaprea.wav",
+          "label": "itaprea.wav"
+        },
+        {
+          "file": "sounds/itapreb.wav",
+          "label": "itapreb.wav"
+        },
+        {
+          "file": "sounds/itaprec.wav",
+          "label": "itaprec.wav"
+        },
+        {
+          "file": "sounds/itapred.wav",
+          "label": "itapred.wav"
+        },
+        {
+          "file": "sounds/itapree.wav",
+          "label": "itapree.wav"
+        },
+        {
+          "file": "sounds/iyuprea.wav",
+          "label": "iyuprea.wav"
+        },
+        {
+          "file": "sounds/iyupreb.wav",
+          "label": "iyupreb.wav"
+        },
+        {
+          "file": "sounds/iyuprec.wav",
+          "label": "iyuprec.wav"
+        },
+        {
+          "file": "sounds/iyupred.wav",
+          "label": "iyupred.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiReta.wav",
+          "label": "AUTanya_VoiReta.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiRetb.wav",
+          "label": "AUTanya_VoiRetb.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiRetc.wav",
+          "label": "AUTanya_VoiRetc.wav"
+        },
+        {
+          "file": "sounds/peon_PeonReady1.wav",
+          "label": "peon_PeonReady1.wav"
+        },
+        {
+          "file": "sounds/peon_PeonWhat4.wav",
+          "label": "peon_PeonWhat4.wav"
+        },
+        {
+          "file": "sounds/peon_PeonYes1.wav",
+          "label": "peon_PeonYes1.wav"
+        },
+        {
+          "file": "sounds/peon_PeonYes2.wav",
+          "label": "peon_PeonYes2.wav"
+        },
+        {
+          "file": "sounds/peon_PeonYes3.wav",
+          "label": "peon_PeonYes3.wav"
+        },
+        {
+          "file": "sounds/peon_PeonYesAttack1.wav",
+          "label": "peon_PeonYesAttack1.wav"
+        },
+        {
+          "file": "sounds/peon_PeonYesAttack3.wav",
+          "label": "peon_PeonYesAttack3.wav"
+        },
+        {
+          "file": "sounds/peas_PeasantReady1.wav",
+          "label": "peas_PeasantReady1.wav"
+        },
+        {
+          "file": "sounds/peas_PeasantYes1.wav",
+          "label": "peas_PeasantYes1.wav"
+        },
+        {
+          "file": "sounds/peas_PeasantYes3.wav",
+          "label": "peas_PeasantYes3.wav"
+        },
+        {
+          "file": "sounds/peas_PeasantWhat3.wav",
+          "label": "peas_PeasantWhat3.wav"
+        },
+        {
+          "file": "sounds/bcruis_HailingFrequenciesOpen.mp3",
+          "label": "bcruis_HailingFrequenciesOpen.mp3"
+        },
+        {
+          "file": "sounds/bcruis_ReceivingTransmission.mp3",
+          "label": "bcruis_ReceivingTransmission.mp3"
+        },
+        {
+          "file": "sounds/bcruis_GoodDayCommander.mp3",
+          "label": "bcruis_GoodDayCommander.mp3"
+        },
+        {
+          "file": "sounds/kerry_ImReady.mp3",
+          "label": "kerry_ImReady.mp3"
+        },
+        {
+          "file": "sounds/kerry_WaitingOnYou.mp3",
+          "label": "kerry_WaitingOnYou.mp3"
+        },
+        {
+          "file": "sounds/glados_GoodNews.mp3",
+          "label": "glados_GoodNews.mp3"
+        },
+        {
+          "file": "sounds/glados_Congratulations.mp3",
+          "label": "glados_Congratulations.mp3"
+        }
+      ]
+    },
+    "task.error": {
+      "sounds": [
+        {
+          "file": "sounds/ra2a_unit lost.wav",
+          "label": "ra2a_unit lost.wav"
+        },
+        {
+          "file": "sounds/ra2s_unit lost.wav",
+          "label": "ra2s_unit lost.wav"
+        },
+        {
+          "file": "sounds/ra2a_battle control terminated.wav",
+          "label": "ra2a_battle control terminated.wav"
+        },
+        {
+          "file": "sounds/ra2s_battle control terminated.wav",
+          "label": "ra2s_battle control terminated.wav"
+        },
+        {
+          "file": "sounds/Aeva_UnitLost.wav",
+          "label": "Aeva_UnitLost.wav"
+        },
+        {
+          "file": "sounds/Seva_UnitLost.wav",
+          "label": "Seva_UnitLost.wav"
+        },
+        {
+          "file": "sounds/Ieva_UnitLost.wav",
+          "label": "Ieva_UnitLost.wav"
+        },
+        {
+          "file": "sounds/Aeva_BattConTermin.wav",
+          "label": "Aeva_BattConTermin.wav"
+        },
+        {
+          "file": "sounds/Seva_BattConTermin.wav",
+          "label": "Seva_BattConTermin.wav"
+        },
+        {
+          "file": "sounds/Ieva_BattConTermin.wav",
+          "label": "Ieva_BattConTermin.wav"
+        },
+        {
+          "file": "sounds/Geva_UnitLosta.wav",
+          "label": "Geva_UnitLosta.wav"
+        },
+        {
+          "file": "sounds/Neva_UnitLosta.wav",
+          "label": "Neva_UnitLosta.wav"
+        },
+        {
+          "file": "sounds/ccgs_unit lost.wav",
+          "label": "ccgs_unit lost.wav"
+        },
+        {
+          "file": "sounds/iborfea.wav",
+          "label": "iborfea.wav"
+        },
+        {
+          "file": "sounds/iborfeb.wav",
+          "label": "iborfeb.wav"
+        },
+        {
+          "file": "sounds/iborfec.wav",
+          "label": "iborfec.wav"
+        },
+        {
+          "file": "sounds/iborfed.wav",
+          "label": "iborfed.wav"
+        },
+        {
+          "file": "sounds/itapfea.wav",
+          "label": "itapfea.wav"
+        },
+        {
+          "file": "sounds/itapfeb.wav",
+          "label": "itapfeb.wav"
+        },
+        {
+          "file": "sounds/itapfec.wav",
+          "label": "itapfec.wav"
+        },
+        {
+          "file": "sounds/itapfed.wav",
+          "label": "itapfed.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiDiea.wav",
+          "label": "AUTanya_VoiDiea.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiDieb.wav",
+          "label": "AUTanya_VoiDieb.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiDiec.wav",
+          "label": "AUTanya_VoiDiec.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiDied.wav",
+          "label": "AUTanya_VoiDied.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiDiee.wav",
+          "label": "AUTanya_VoiDiee.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiDief.wav",
+          "label": "AUTanya_VoiDief.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiDieg.wav",
+          "label": "AUTanya_VoiDieg.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiDieh.wav",
+          "label": "AUTanya_VoiDieh.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiDieShocka.wav",
+          "label": "AUTanya_VoiDieShocka.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiDieShockb.wav",
+          "label": "AUTanya_VoiDieShockb.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiFeara.wav",
+          "label": "SUNatas_VoiFeara.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiFearb.wav",
+          "label": "SUNatas_VoiFearb.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiFearc.wav",
+          "label": "SUNatas_VoiFearc.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiFeard.wav",
+          "label": "SUNatas_VoiFeard.wav"
+        },
+        {
+          "file": "sounds/SUNatas_voiDiea.wav",
+          "label": "SUNatas_voiDiea.wav"
+        },
+        {
+          "file": "sounds/SUNatas_voiDieb.wav",
+          "label": "SUNatas_voiDieb.wav"
+        },
+        {
+          "file": "sounds/SUNatas_voiDiec.wav",
+          "label": "SUNatas_voiDiec.wav"
+        },
+        {
+          "file": "sounds/SUNatas_voiDied.wav",
+          "label": "SUNatas_voiDied.wav"
+        },
+        {
+          "file": "sounds/SUNatas_voiDiee.wav",
+          "label": "SUNatas_voiDiee.wav"
+        },
+        {
+          "file": "sounds/SUNatas_voiDief.wav",
+          "label": "SUNatas_voiDief.wav"
+        },
+        {
+          "file": "sounds/SUNatas_voiDieg.wav",
+          "label": "SUNatas_voiDieg.wav"
+        },
+        {
+          "file": "sounds/SUNatas_voiDieh.wav",
+          "label": "SUNatas_voiDieh.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiDieFirea.wav",
+          "label": "SUNatas_VoiDieFirea.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiDieFireb.wav",
+          "label": "SUNatas_VoiDieFireb.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiDieFirec.wav",
+          "label": "SUNatas_VoiDieFirec.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiDieFired.wav",
+          "label": "SUNatas_VoiDieFired.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiDieShocka.wav",
+          "label": "SUNatas_VoiDieShocka.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiDieShockb.wav",
+          "label": "SUNatas_VoiDieShockb.wav"
+        },
+        {
+          "file": "sounds/iyupfea.wav",
+          "label": "iyupfea.wav"
+        },
+        {
+          "file": "sounds/iyupfeb.wav",
+          "label": "iyupfeb.wav"
+        },
+        {
+          "file": "sounds/iyupfec.wav",
+          "label": "iyupfec.wav"
+        },
+        {
+          "file": "sounds/peon_PeonAngry4.wav",
+          "label": "peon_PeonAngry4.wav"
+        },
+        {
+          "file": "sounds/peon_PeonDeath.wav",
+          "label": "peon_PeonDeath.wav"
+        },
+        {
+          "file": "sounds/peas_PeasantYesAttack3.wav",
+          "label": "peas_PeasantYesAttack3.wav"
+        },
+        {
+          "file": "sounds/peas_PeasantYesAttack4.wav",
+          "label": "peas_PeasantYesAttack4.wav"
+        },
+        {
+          "file": "sounds/kerry_Death1.mp3",
+          "label": "kerry_Death1.mp3"
+        },
+        {
+          "file": "sounds/kerry_Death2.mp3",
+          "label": "kerry_Death2.mp3"
+        },
+        {
+          "file": "sounds/glados_WompWomp.mp3",
+          "label": "glados_WompWomp.mp3"
+        },
+        {
+          "file": "sounds/glados_ItAintWorkin.mp3",
+          "label": "glados_ItAintWorkin.mp3"
+        }
+      ]
+    },
+    "input.required": {
+      "sounds": [
+        {
+          "file": "sounds/ra2a_incoming transmission.wav",
+          "label": "ra2a_incoming transmission.wav"
+        },
+        {
+          "file": "sounds/ra2s_incoming transmission.wav",
+          "label": "ra2s_incoming transmission.wav"
+        },
+        {
+          "file": "sounds/Aeva_IncomingTrans.wav",
+          "label": "Aeva_IncomingTrans.wav"
+        },
+        {
+          "file": "sounds/Seva_IncomingTrans.wav",
+          "label": "Seva_IncomingTrans.wav"
+        },
+        {
+          "file": "sounds/Ieva_IncomingTrans.wav",
+          "label": "Ieva_IncomingTrans.wav"
+        },
+        {
+          "file": "sounds/iborsea.wav",
+          "label": "iborsea.wav"
+        },
+        {
+          "file": "sounds/iborseb.wav",
+          "label": "iborseb.wav"
+        },
+        {
+          "file": "sounds/iborsec.wav",
+          "label": "iborsec.wav"
+        },
+        {
+          "file": "sounds/iborsed.wav",
+          "label": "iborsed.wav"
+        },
+        {
+          "file": "sounds/iborsee.wav",
+          "label": "iborsee.wav"
+        },
+        {
+          "file": "sounds/itansea.wav",
+          "label": "itansea.wav"
+        },
+        {
+          "file": "sounds/itanseb.wav",
+          "label": "itanseb.wav"
+        },
+        {
+          "file": "sounds/itansec.wav",
+          "label": "itansec.wav"
+        },
+        {
+          "file": "sounds/itansed.wav",
+          "label": "itansed.wav"
+        },
+        {
+          "file": "sounds/itansee.wav",
+          "label": "itansee.wav"
+        },
+        {
+          "file": "sounds/itapsea.wav",
+          "label": "itapsea.wav"
+        },
+        {
+          "file": "sounds/itapseb.wav",
+          "label": "itapseb.wav"
+        },
+        {
+          "file": "sounds/itapsec.wav",
+          "label": "itapsec.wav"
+        },
+        {
+          "file": "sounds/AUTanya_selectA.wav",
+          "label": "AUTanya_selectA.wav"
+        },
+        {
+          "file": "sounds/AUTanya_selectB.wav",
+          "label": "AUTanya_selectB.wav"
+        },
+        {
+          "file": "sounds/AUTanya_selectC.wav",
+          "label": "AUTanya_selectC.wav"
+        },
+        {
+          "file": "sounds/AUTanya_selectD.wav",
+          "label": "AUTanya_selectD.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiSela.wav",
+          "label": "AUTanya_VoiSela.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiSelb.wav",
+          "label": "AUTanya_VoiSelb.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiSelc.wav",
+          "label": "AUTanya_VoiSelc.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiSeld.wav",
+          "label": "AUTanya_VoiSeld.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiSele.wav",
+          "label": "AUTanya_VoiSele.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiSelf.wav",
+          "label": "AUTanya_VoiSelf.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiSelg.wav",
+          "label": "AUTanya_VoiSelg.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiSelh.wav",
+          "label": "AUTanya_VoiSelh.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiSelBata.wav",
+          "label": "AUTanya_VoiSelBata.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiSelBatb.wav",
+          "label": "AUTanya_VoiSelBatb.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiSelBatc.wav",
+          "label": "AUTanya_VoiSelBatc.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiSelBatd.wav",
+          "label": "AUTanya_VoiSelBatd.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiSelBate.wav",
+          "label": "AUTanya_VoiSelBate.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiSelBatf.wav",
+          "label": "AUTanya_VoiSelBatf.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiSelBatg.wav",
+          "label": "AUTanya_VoiSelBatg.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiSela.wav",
+          "label": "SUNatas_VoiSela.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiSelb.wav",
+          "label": "SUNatas_VoiSelb.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiSelc.wav",
+          "label": "SUNatas_VoiSelc.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiSeld.wav",
+          "label": "SUNatas_VoiSeld.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiSele.wav",
+          "label": "SUNatas_VoiSele.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiSelg.wav",
+          "label": "SUNatas_VoiSelg.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiSelh.wav",
+          "label": "SUNatas_VoiSelh.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiSelf.wav",
+          "label": "SUNatas_VoiSelf.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiSelecta.wav",
+          "label": "SUNatas_VoiSelecta.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiSelectb.wav",
+          "label": "SUNatas_VoiSelectb.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiSelectc.wav",
+          "label": "SUNatas_VoiSelectc.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiSelectd.wav",
+          "label": "SUNatas_VoiSelectd.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiSelecte.wav",
+          "label": "SUNatas_VoiSelecte.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiSelectf.wav",
+          "label": "SUNatas_VoiSelectf.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiSelBata.wav",
+          "label": "SUNatas_VoiSelBata.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiSelBatb.wav",
+          "label": "SUNatas_VoiSelBatb.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiSelBatc.wav",
+          "label": "SUNatas_VoiSelBatc.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiSelBatd.wav",
+          "label": "SUNatas_VoiSelBatd.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiSelBate.wav",
+          "label": "SUNatas_VoiSelBate.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiSelBatf.wav",
+          "label": "SUNatas_VoiSelBatf.wav"
+        },
+        {
+          "file": "sounds/iyursea.wav",
+          "label": "iyursea.wav"
+        },
+        {
+          "file": "sounds/iyurseb.wav",
+          "label": "iyurseb.wav"
+        },
+        {
+          "file": "sounds/iyursec.wav",
+          "label": "iyursec.wav"
+        },
+        {
+          "file": "sounds/iyursed.wav",
+          "label": "iyursed.wav"
+        },
+        {
+          "file": "sounds/iyursee.wav",
+          "label": "iyursee.wav"
+        },
+        {
+          "file": "sounds/iyupsea.wav",
+          "label": "iyupsea.wav"
+        },
+        {
+          "file": "sounds/iyupseb.wav",
+          "label": "iyupseb.wav"
+        },
+        {
+          "file": "sounds/iyupsec.wav",
+          "label": "iyupsec.wav"
+        },
+        {
+          "file": "sounds/iyupsed.wav",
+          "label": "iyupsed.wav"
+        },
+        {
+          "file": "sounds/iyupsee.wav",
+          "label": "iyupsee.wav"
+        },
+        {
+          "file": "sounds/iyupsef.wav",
+          "label": "iyupsef.wav"
+        },
+        {
+          "file": "sounds/peon_PeonWhat1.wav",
+          "label": "peon_PeonWhat1.wav"
+        },
+        {
+          "file": "sounds/peon_PeonWhat2.wav",
+          "label": "peon_PeonWhat2.wav"
+        },
+        {
+          "file": "sounds/peon_PeonWhat3.wav",
+          "label": "peon_PeonWhat3.wav"
+        },
+        {
+          "file": "sounds/peon_PeonWhat4.wav",
+          "label": "peon_PeonWhat4.wav"
+        },
+        {
+          "file": "sounds/peas_PeasantWhat1.wav",
+          "label": "peas_PeasantWhat1.wav"
+        },
+        {
+          "file": "sounds/peas_PeasantWhat2.wav",
+          "label": "peas_PeasantWhat2.wav"
+        },
+        {
+          "file": "sounds/peas_PeasantWhat3.wav",
+          "label": "peas_PeasantWhat3.wav"
+        },
+        {
+          "file": "sounds/peas_PeasantWhat4.wav",
+          "label": "peas_PeasantWhat4.wav"
+        },
+        {
+          "file": "sounds/bcruis_IdentifyYourself.mp3",
+          "label": "bcruis_IdentifyYourself.mp3"
+        },
+        {
+          "file": "sounds/bcruis_ReceivingTransmission.mp3",
+          "label": "bcruis_ReceivingTransmission.mp3"
+        },
+        {
+          "file": "sounds/kerry_WhatNow.mp3",
+          "label": "kerry_WhatNow.mp3"
+        },
+        {
+          "file": "sounds/kerry_WaitingOnYou.mp3",
+          "label": "kerry_WaitingOnYou.mp3"
+        },
+        {
+          "file": "sounds/glados_UnableToScan.mp3",
+          "label": "glados_UnableToScan.mp3"
+        },
+        {
+          "file": "sounds/glados_SoftwareIntrusionDetected.mp3",
+          "label": "glados_SoftwareIntrusionDetected.mp3"
+        },
+        {
+          "file": "sounds/glados_CanYouHearMe.mp3",
+          "label": "glados_CanYouHearMe.mp3"
+        },
+        {
+          "file": "sounds/glados_YouHaveANotification.mp3",
+          "label": "glados_YouHaveANotification.mp3"
+        }
+      ]
+    },
+    "resource.limit": {
+      "sounds": [
+        {
+          "file": "sounds/ra2a_insufficient funds.wav",
+          "label": "ra2a_insufficient funds.wav"
+        },
+        {
+          "file": "sounds/ra2s_insufficient funds.wav",
+          "label": "ra2s_insufficient funds.wav"
+        },
+        {
+          "file": "sounds/ra2a_low power.wav",
+          "label": "ra2a_low power.wav"
+        },
+        {
+          "file": "sounds/ra2s_low power.wav",
+          "label": "ra2s_low power.wav"
+        },
+        {
+          "file": "sounds/Aeva_InsufficFunds.wav",
+          "label": "Aeva_InsufficFunds.wav"
+        },
+        {
+          "file": "sounds/Seva_InsufficFunds.wav",
+          "label": "Seva_InsufficFunds.wav"
+        },
+        {
+          "file": "sounds/Ieva_InsufficFunds.wav",
+          "label": "Ieva_InsufficFunds.wav"
+        },
+        {
+          "file": "sounds/Aeva_LowPower.wav",
+          "label": "Aeva_LowPower.wav"
+        },
+        {
+          "file": "sounds/Seva_LowPower.wav",
+          "label": "Seva_LowPower.wav"
+        },
+        {
+          "file": "sounds/Ieva_LowPower.wav",
+          "label": "Ieva_LowPower.wav"
+        },
+        {
+          "file": "sounds/ccgs_we need more funds.wav",
+          "label": "ccgs_we need more funds.wav"
+        },
+        {
+          "file": "sounds/ccgs_our power is lower.wav",
+          "label": "ccgs_our power is lower.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiHlpMea.wav",
+          "label": "AUTanya_VoiHlpMea.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiHlpMeb.wav",
+          "label": "AUTanya_VoiHlpMeb.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiHlpMec.wav",
+          "label": "AUTanya_VoiHlpMec.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiHlpMed.wav",
+          "label": "AUTanya_VoiHlpMed.wav"
+        },
+        {
+          "file": "sounds/AUTanya_VoiHlpMee.wav",
+          "label": "AUTanya_VoiHlpMee.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiHlpMea.wav",
+          "label": "SUNatas_VoiHlpMea.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiHlpMeb.wav",
+          "label": "SUNatas_VoiHlpMeb.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiHlpMec.wav",
+          "label": "SUNatas_VoiHlpMec.wav"
+        },
+        {
+          "file": "sounds/SUNatas_VoiHlpMed.wav",
+          "label": "SUNatas_VoiHlpMed.wav"
+        },
+        {
+          "file": "sounds/iyuplo1a.wav",
+          "label": "iyuplo1a.wav"
+        },
+        {
+          "file": "sounds/iyuplo2a.wav",
+          "label": "iyuplo2a.wav"
+        },
+        {
+          "file": "sounds/iyuplo2b.wav",
+          "label": "iyuplo2b.wav"
+        },
+        {
+          "file": "sounds/iyuplo3a.wav",
+          "label": "iyuplo3a.wav"
+        },
+        {
+          "file": "sounds/peon_PeonWarcry1.wav",
+          "label": "peon_PeonWarcry1.wav"
+        },
+        {
+          "file": "sounds/glados_BecauseImAPotato.mp3",
+          "label": "glados_BecauseImAPotato.mp3"
+        },
+        {
+          "file": "sounds/glados_Potato.mp3",
+          "label": "glados_Potato.mp3"
+        },
+        {
+          "file": "sounds/glados_StillAPotato.mp3",
+          "label": "glados_StillAPotato.mp3"
+        }
+      ]
+    },
+    "user.spam": {
+      "sounds": [
+        {
+          "file": "sounds/ra2a_warning nuclear missile launched.wav",
+          "label": "ra2a_warning nuclear missile launched.wav"
+        },
+        {
+          "file": "sounds/ra2s_warning nuclear missile launched.wav",
+          "label": "ra2s_warning nuclear missile launched.wav"
+        },
+        {
+          "file": "sounds/Aeva_WarnVacuumImploderLaunch.wav",
+          "label": "Aeva_WarnVacuumImploderLaunch.wav"
+        },
+        {
+          "file": "sounds/Seva_WarnVacuumImploderLaunch.wav",
+          "label": "Seva_WarnVacuumImploderLaunch.wav"
+        },
+        {
+          "file": "sounds/Ieva_WarnVacuumImploderLaunch.wav",
+          "label": "Ieva_WarnVacuumImploderLaunch.wav"
+        },
+        {
+          "file": "sounds/ccga_all your base are belong to us.wav",
+          "label": "ccga_all your base are belong to us.wav"
+        },
+        {
+          "file": "sounds/ccga_search and destroy.wav",
+          "label": "ccga_search and destroy.wav"
+        },
+        {
+          "file": "sounds/ccga_the mother of all weapons.wav",
+          "label": "ccga_the mother of all weapons.wav"
+        },
+        {
+          "file": "sounds/ccga_the peoples army.wav",
+          "label": "ccga_the peoples army.wav"
+        },
+        {
+          "file": "sounds/ibordia.wav",
+          "label": "ibordia.wav"
+        },
+        {
+          "file": "sounds/ibordib.wav",
+          "label": "ibordib.wav"
+        },
+        {
+          "file": "sounds/ibordic.wav",
+          "label": "ibordic.wav"
+        },
+        {
+          "file": "sounds/ibordid.wav",
+          "label": "ibordid.wav"
+        },
+        {
+          "file": "sounds/ibordie.wav",
+          "label": "ibordie.wav"
+        },
+        {
+          "file": "sounds/itandia.wav",
+          "label": "itandia.wav"
+        },
+        {
+          "file": "sounds/itandib.wav",
+          "label": "itandib.wav"
+        },
+        {
+          "file": "sounds/itandic.wav",
+          "label": "itandic.wav"
+        },
+        {
+          "file": "sounds/itapdia.wav",
+          "label": "itapdia.wav"
+        },
+        {
+          "file": "sounds/itapdib.wav",
+          "label": "itapdib.wav"
+        },
+        {
+          "file": "sounds/itapdic.wav",
+          "label": "itapdic.wav"
+        },
+        {
+          "file": "sounds/itapdid.wav",
+          "label": "itapdid.wav"
+        },
+        {
+          "file": "sounds/itapdie.wav",
+          "label": "itapdie.wav"
+        },
+        {
+          "file": "sounds/iyurdia.wav",
+          "label": "iyurdia.wav"
+        },
+        {
+          "file": "sounds/iyurdib.wav",
+          "label": "iyurdib.wav"
+        },
+        {
+          "file": "sounds/iyurdic.wav",
+          "label": "iyurdic.wav"
+        },
+        {
+          "file": "sounds/iyupdia.wav",
+          "label": "iyupdia.wav"
+        },
+        {
+          "file": "sounds/iyupdib.wav",
+          "label": "iyupdib.wav"
+        },
+        {
+          "file": "sounds/iyupdic.wav",
+          "label": "iyupdic.wav"
+        },
+        {
+          "file": "sounds/iyupdid.wav",
+          "label": "iyupdid.wav"
+        },
+        {
+          "file": "sounds/ra2u_tanya-hahahahahaha.wav",
+          "label": "ra2u_tanya-hahahahahaha.wav"
+        },
+        {
+          "file": "sounds/ra2u_tanya-shake it baby.wav",
+          "label": "ra2u_tanya-shake it baby.wav"
+        },
+        {
+          "file": "sounds/ra2u_tanya-yeah baby.wav",
+          "label": "ra2u_tanya-yeah baby.wav"
+        },
+        {
+          "file": "sounds/ra2u_tanya-wheres party.wav",
+          "label": "ra2u_tanya-wheres party.wav"
+        },
+        {
+          "file": "sounds/ra2u_navy seal-whos your daddy.wav",
+          "label": "ra2u_navy seal-whos your daddy.wav"
+        },
+        {
+          "file": "sounds/ra2u_yuri-mind control.wav",
+          "label": "ra2u_yuri-mind control.wav"
+        },
+        {
+          "file": "sounds/ra2u_rhino-we will bury them.wav",
+          "label": "ra2u_rhino-we will bury them.wav"
+        },
+        {
+          "file": "sounds/ra2u_apoc-soviet power supreme.wav",
+          "label": "ra2u_apoc-soviet power supreme.wav"
+        },
+        {
+          "file": "sounds/peon_PeonAngry1.wav",
+          "label": "peon_PeonAngry1.wav"
+        },
+        {
+          "file": "sounds/peon_PeonAngry2.wav",
+          "label": "peon_PeonAngry2.wav"
+        },
+        {
+          "file": "sounds/peon_PeonAngry3.wav",
+          "label": "peon_PeonAngry3.wav"
+        },
+        {
+          "file": "sounds/peas_PeasantAngry1.wav",
+          "label": "peas_PeasantAngry1.wav"
+        },
+        {
+          "file": "sounds/peas_PeasantAngry2.wav",
+          "label": "peas_PeasantAngry2.wav"
+        },
+        {
+          "file": "sounds/peas_PeasantAngry3.wav",
+          "label": "peas_PeasantAngry3.wav"
+        },
+        {
+          "file": "sounds/peas_PeasantAngry4.wav",
+          "label": "peas_PeasantAngry4.wav"
+        },
+        {
+          "file": "sounds/peas_PeasantAngry5.wav",
+          "label": "peas_PeasantAngry5.wav"
+        },
+        {
+          "file": "sounds/kerry_AnnoyingPeople.mp3",
+          "label": "kerry_AnnoyingPeople.mp3"
+        },
+        {
+          "file": "sounds/kerry_EasilyAmused.mp3",
+          "label": "kerry_EasilyAmused.mp3"
+        },
+        {
+          "file": "sounds/kerry_Telepath.mp3",
+          "label": "kerry_Telepath.mp3"
+        },
+        {
+          "file": "sounds/kerry_GotAJobToDo.mp3",
+          "label": "kerry_GotAJobToDo.mp3"
+        },
+        {
+          "file": "sounds/glados_WhereDidYourLifeGoWrong.mp3",
+          "label": "glados_WhereDidYourLifeGoWrong.mp3"
+        },
+        {
+          "file": "sounds/glados_Neurotoxin.mp3",
+          "label": "glados_Neurotoxin.mp3"
+        },
+        {
+          "file": "sounds/glados_Unbelievable.mp3",
+          "label": "glados_Unbelievable.mp3"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+# Sound files are copyrighted game assets — do not commit
+sounds/
+*.wav
+*.mp3
+*.ogg
+
+# macOS
+.DS_Store
