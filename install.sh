@@ -71,7 +71,7 @@ copy_prefixed() {
     local src_dir="$1" prefix="$2"
     local count=0
     if [ -d "$src_dir" ]; then
-        for f in "$src_dir"/*.wav "$src_dir"/*.mp3 2>/dev/null; do
+        for f in "$src_dir"/*.wav "$src_dir"/*.mp3; do
             [ -f "$f" ] || continue
             cp "$f" "$SOUNDS_DIR/${prefix}$(basename "$f")"
             (( count++ )) || true
@@ -84,7 +84,7 @@ copy_files() {
     local src_dir="$1"
     local count=0
     if [ -d "$src_dir" ]; then
-        for f in "$src_dir"/*.wav "$src_dir"/*.mp3 2>/dev/null; do
+        for f in "$src_dir"/*.wav "$src_dir"/*.mp3; do
             [ -f "$f" ] || continue
             cp "$f" "$SOUNDS_DIR/$(basename "$f")"
             (( count++ )) || true
@@ -118,7 +118,7 @@ copy_warcraft_pack() {
     local src="$PACKS_DIR/$pack/sounds"
     local count=0
     if [ -d "$src" ]; then
-        for f in "$src"/*.wav "$src"/*.mp3 2>/dev/null; do
+        for f in "$src"/*.wav "$src"/*.mp3; do
             [ -f "$f" ] || continue
             cp "$f" "$SOUNDS_DIR/${prefix}$(basename "$f")"
             (( count++ )) || true
