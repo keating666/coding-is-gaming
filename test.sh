@@ -91,9 +91,16 @@ check "manifest rebuilt without the missing file" python3 -c "
 import json,sys; m=json.load(open('$PEON2/packs/coding-is-gaming/openpeon.json'))
 n=sum(len(c['sounds']) for c in m['categories'].values()); sys.exit(0 if n==$N_ROWS-1 else 1)"
 
+# a folder already in pack layout (sounds/<event>/<name>) installs as-is
+PACKSRC="$TMP/packsrc"; cp -R "$PACK/sounds" "$PACKSRC"
+PEON4="$TMP/peon4"; mkdir -p "$PEON4"; cp "$PEON/peon.sh" "$PEON4/"
+PEON_DIR="$PEON4" "$REPO/install.sh" "$PACKSRC" >"$TMP/install4.log" 2>&1 && ok "pack-layout folder installs" || fail "pack-layout folder installs"
+N4=$(find "$PEON4/packs/coding-is-gaming/sounds" -type f \( -name '*.wav' -o -name '*.mp3' \) 2>/dev/null | wc -l | tr -d ' ')
+[ "$N4" = "$N_ROWS" ] && ok "pack-layout copy keeps all $N_ROWS sounds" || fail "pack-layout copy has $N4 of $N_ROWS"
+
 # ── End-to-end: real sounds, real audio decode, manifest round trip ──────────
 echo "[e2e] real sound folder"
-SOUND_SRC="${SOUND_SRC:-$HOME/Downloads/sound}"
+SOUND_SRC="${SOUND_SRC:-$HOME/.openpeon/packs/keating-mix/sounds}"
 if [ -d "$SOUND_SRC" ] && command -v afinfo >/dev/null; then
     PEON3="$TMP/peon3"; mkdir -p "$PEON3"; cp "$PEON/peon.sh" "$PEON3/"
     PEON_DIR="$PEON3" "$REPO/install.sh" "$SOUND_SRC" >"$TMP/install3.log" 2>&1 && ok "install from $SOUND_SRC" || fail "install from $SOUND_SRC"
@@ -102,10 +109,13 @@ if [ -d "$SOUND_SRC" ] && command -v afinfo >/dev/null; then
         < <(find "$PEON3/packs/coding-is-gaming/sounds" -type f \( -name '*.wav' -o -name '*.mp3' \))
     [ "$BAD" = 0 ] && ok "every installed file decodes" || fail "$BAD files do not decode"
     "$PEON3/packs/coding-is-gaming/rebuild.sh" >/dev/null
-    python3 - "$REPO/openpeon.json" "$PEON3/packs/coding-is-gaming/openpeon.json" <<'PY' && ok "rebuild.sh reproduces the manifest" || fail "rebuild.sh reproduces the manifest"
-import json, sys
-a, b = (json.load(open(p, encoding='utf-8')) for p in sys.argv[1:])
-assert a['categories'] == b['categories'], 'categories differ'
+    python3 - "$PEON3/packs/coding-is-gaming/openpeon.json" <<'PY' && ok "rebuild.sh manifest lists only files that exist" || fail "rebuild.sh manifest lists only files that exist"
+import json, sys, os
+path = sys.argv[1]; pack = os.path.dirname(path)
+m = json.load(open(path, encoding='utf-8'))
+files = [s['file'] for c in m['categories'].values() for s in c['sounds']]
+assert files, 'empty manifest'
+assert all(os.path.isfile(os.path.join(pack, f)) for f in files), 'manifest references a missing file'
 PY
 else
     echo "  skip (no $SOUND_SRC or no afinfo)"

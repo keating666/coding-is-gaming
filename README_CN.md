@@ -77,6 +77,12 @@ coding-is-gaming/
 
    缺文件只会提示，不会中断：清单会按实际拷进去的文件生成。
 
+   如果给的文件夹本身已经是语音包结构（七个事件子文件夹，比如装好的包的备份），会原样拷入，不查 `sources.tsv`：
+
+   ```bash
+   ./install.sh ~/Library/Mobile\ Documents/com~apple~CloudDocs/Cloud/red/keating-mix/sounds
+   ```
+
 4. 验证：
 
    ```bash
@@ -106,7 +112,7 @@ coding-is-gaming/
 ./test.sh
 ```
 
-单元测试检查 `sources.tsv` 与 `openpeon.json`；集成测试用合成音频装进临时目录；端到端测试在有真实音频文件夹时运行（`SOUND_SRC`，默认 `~/Downloads/sound`）：每个装入的文件必须能解码，`rebuild.sh` 必须能还原出仓库里的清单。
+单元测试检查 `sources.tsv` 与 `openpeon.json`；集成测试用合成音频装进临时目录；端到端测试在有真实音频文件夹时运行（`SOUND_SRC`，默认 `~/.openpeon/packs/keating-mix/sounds`）：每个装入的文件必须能解码，`rebuild.sh` 生成的清单只能引用真实存在的文件。
 
 ---
 

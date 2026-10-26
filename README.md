@@ -77,6 +77,12 @@ The sound files are **not** in this repository; they are copyrighted game assets
 
    Missing files are reported, not fatal: the manifest is then built from what was actually copied.
 
+   A folder that is already in pack layout (seven event sub-folders, e.g. a backup of an installed pack) is copied as-is, no `sources.tsv` lookup:
+
+   ```bash
+   ./install.sh ~/Library/Mobile\ Documents/com~apple~CloudDocs/Cloud/red/keating-mix/sounds
+   ```
+
 4. Check:
 
    ```bash
@@ -106,7 +112,7 @@ To change the curated set in this repo instead, edit `sources.tsv` and run `./re
 ./test.sh
 ```
 
-Unit tests check `sources.tsv` and `openpeon.json`. The integration test installs into a temporary peon directory with synthetic audio. The end-to-end test runs when a real sound folder exists (`SOUND_SRC`, default `~/Downloads/sound`): every installed file must decode, and `rebuild.sh` must reproduce the committed manifest.
+Unit tests check `sources.tsv` and `openpeon.json`. The integration test installs into a temporary peon directory with synthetic audio. The end-to-end test runs when a real sound folder exists (`SOUND_SRC`, default `~/.openpeon/packs/keating-mix/sounds`): every installed file must decode, and the manifest `rebuild.sh` writes may only list files that exist.
 
 ---
 

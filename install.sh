@@ -55,6 +55,13 @@ fi
 mkdir -p "$PACK_DIR/sounds"
 info "Installing to: $PACK_DIR"
 copied=0; missing=0
+if [ -d "$SRC_DIR/session.start" ]; then
+    # The source is already a pack: event folders holding the final file names
+    # (e.g. a backup of an installed pack). Copy it as-is, no renaming needed.
+    info "Source is in pack layout, copying folders as-is"
+    cp -R "$SRC_DIR"/. "$PACK_DIR/sounds/"
+    copied=$(find "$PACK_DIR/sounds" -type f \( -name '*.wav' -o -name '*.mp3' \) | wc -l | tr -d ' ')
+else
 while IFS=$'\t' read -r event source target; do
     [ -z "$event" ] && continue
     case "$event" in \#*) continue ;; esac
@@ -67,17 +74,19 @@ while IFS=$'\t' read -r event source target; do
         missing=$((missing + 1))
     fi
 done < "$SOURCES"
+fi
 info "$copied sounds installed, $missing missing"
 
 # ── Manifest and helper, then activate ───────────────────────────────────────
 cp "$REPO_DIR/rebuild.sh" "$PACK_DIR/rebuild.sh"
 chmod +x "$PACK_DIR/rebuild.sh"
-if [ "$missing" -eq 0 ]; then
+if [ "$missing" -eq 0 ] && [ ! -d "$SRC_DIR/session.start" ]; then
     cp "$REPO_DIR/openpeon.json" "$PACK_DIR/openpeon.json"
 else
-    # Some sources were absent: build the manifest from what actually landed,
-    # so peon-ping never references a file that is not there.
-    warn "building manifest from installed files only"
+    # Sources were absent, or the pack-layout folder may differ from the
+    # curated list: build the manifest from what actually landed, so peon-ping
+    # never references a file that is not there.
+    info "building manifest from installed files"
     "$PACK_DIR/rebuild.sh" >/dev/null
 fi
 
