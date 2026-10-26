@@ -2,123 +2,114 @@
 
 **[中文](README_CN.md) | [日本語](README_JP.md) | English**
 
-> A [peon-ping](https://github.com/peon-ping/peon-ping) voice pack that turns your Claude Code session into an RTS battlefield.
+> A [peon-ping](https://github.com/peon-ping/peon-ping) voice pack: Red Alert and Warcraft voice lines for the 7 Claude Code events.
 
-Every time Claude thinks, finishes, asks a question, or hits an error — you hear a random voice from Red Alert, Warcraft III, StarCraft, or Portal. **470 sounds, 7 events, zero repetition boredom.**
+Version 2 is a curated cut. The first release threw 470 clips at you; this one keeps 38 lines that are short (under 3 seconds), unmistakable, and sorted so that each event sounds like what it means. One folder per event, one random line per trigger.
 
 ---
 
 ## What you'll hear
 
-| Event | What triggers it | Example sounds |
-|-------|-----------------|----------------|
-| `session.start` | New Claude Code session | *"Battle Control Online"*, *"Kirov reporting"*, Peon *"Ready to work?"* |
-| `task.acknowledge` | Claude starts working | Boris move orders, Tanya attack responses, Peon *"Work work"* |
-| `task.complete` | Task finished | *"Construction complete"*, *"Unit promoted"*, GLaDOS *"Congratulations"* |
-| `task.error` | Error / failure | *"Unit lost"*, *"Battle Control Terminated"*, Tanya death cries |
-| `input.required` | Claude needs your input | *"Incoming transmission"*, all characters' select responses |
-| `resource.limit` | Context / resource limit | *"Insufficient funds"*, *"Low power"*, GLaDOS *"I'm a potato"* |
-| `user.spam` | You message too fast | *"Warning: nuclear missile launched"*, *"All your base are belong to us"*, Tanya *"Yeah baby"* |
+| Event | When it fires | Lines (examples) |
+|-------|---------------|------------------|
+| `session.start` | New Claude Code window | Battle control online · Kirov reporting · Natasha here · Peon "Ready to work?" |
+| `task.acknowledge` | You send a message | Work work · Okie dokie · Roger that · Tanya "Move it out!" |
+| `task.complete` | Claude finishes a turn | Construction complete · Unit ready · Unit promoted |
+| `task.error` | A shell command fails | Unit lost · Tanya "Must resist" |
+| `input.required` | Claude needs your approval or answer | Peon "What you want?" · "More work!" · Tanya "You got a target?" |
+| `resource.limit` | Context about to be compacted | Insufficient funds · Low power |
+| `user.spam` | Three prompts within 10 seconds | Warning: nuclear missile launched · Tanya laughing |
 
-## Sound sources
-
-| Game | Characters / EVA |
-|------|-----------------|
-| **Red Alert 2** | EVA (Ally + Soviet), Tanya, Boris, Yuri, Yuri Prime, Kirov, Navy SEAL |
-| **Red Alert 3** | EVA (Ally/Soviet/ERS), Tanya, Natasha |
-| **Command & Conquer 4** | EVA (GDI + Nod) |
-| **C&C Generals** | EVA, *"All your base"*, classic clips |
-| **Warcraft III** | Orc Peon, Human Peasant |
-| **StarCraft** | Sarah Kerrigan, Battlecruiser |
-| **Portal** | GLaDOS |
+Sources: Red Alert 2 EVA (Allied and Soviet), Red Alert 2/3 Tanya, Red Alert 3 Natasha, the Kirov, Warcraft III Peon and Peasant.
 
 ---
 
-## Prerequisites
+## Layout
 
-1. **[peon-ping](https://github.com/peon-ping/peon-ping)** installed
-2. Standard peon-ping packs: `peon`, `peasant`, `glados`, `sc_battlecruiser`, `sc_kerrigan`
-   ```bash
-   peon packs install peon,peasant,glados,sc_battlecruiser,sc_kerrigan
-   ```
-3. **Red Alert sound files** from games you own (see below)
-
----
-
-## Getting the sound files
-
-The sound files are **not included** in this repo — they are copyrighted assets from their respective games.
-
-Extract them from games you own using community modding tools:
-
-- **Red Alert 2 / Yuris Revenge**: extract `ra2.mix` / `ra2md.mix` with [XCC Mixer](https://xhp.xwis.net/utilities.php)
-- **Red Alert 3**: extract audio from the game's `.big` archives with [FinalBIG](https://modenc.renegadeprojects.com/FinalBIG) or similar
-- **C&C4 / Generals**: similar `.big` archive extraction
-
-Your Red Alert sounds folder should look like this:
 ```
-red-alert-sounds/
-├── RA2/
-│   ├── ra2 ally/          ← EVA ally voice lines
-│   ├── ra2 soviet/        ← EVA soviet voice lines
-│   └── unit/              ← unit voice clips
-├── RA3/
-│   ├── ally/              ← Aeva_*.wav
-│   ├── soviet/            ← Seva_*.wav
-│   └── ers/               ← Ieva_*.wav
-├── CC4/                   ← Geva_*.wav, Neva_*.wav
-├── CCG/
-│   ├── speech/
-│   └── audio/
-├── boris/                 ← ibor*.wav
-├── tanya-ra2/             ← itan*.wav, itap*.wav
-├── tanya-ra3/             ← AUTanya_*.wav
-├── natasha/               ← SUNatas_*.wav
-└── yuri/                  ← iyup*.wav, iyur*.wav
+coding-is-gaming/
+├── openpeon.json   ← manifest peon-ping reads (generated, do not hand-edit)
+├── sources.tsv     ← event ⇥ source file in your sound folder ⇥ installed name
+├── install.sh      ← copies the sounds, installs the manifest, activates the pack
+├── rebuild.sh      ← regenerates openpeon.json from the sounds/ folders
+└── test.sh         ← unit + integration + end-to-end tests
 ```
+
+Installed pack:
+
+```
+~/.openpeon/packs/coding-is-gaming/sounds/
+├── session.start/
+├── task.acknowledge/
+├── task.complete/
+├── task.error/
+├── input.required/
+├── resource.limit/
+└── user.spam/
+```
+
+The sound files are **not** in this repository; they are copyrighted game assets. `sources.tsv` lists exactly which files are expected and where they come from.
 
 ---
 
 ## Install
 
-```bash
-git clone https://github.com/YOUR_USERNAME/coding-is-gaming
-cd coding-is-gaming
-./install.sh /path/to/your/red-alert-sounds
-```
+1. Install [peon-ping](https://github.com/peon-ping/peon-ping).
+2. Put your extracted game sounds in one folder with this shape (file names as listed in `sources.tsv`):
 
-The script will:
-- Copy and rename all sound files into the pack
-- Borrow Warcraft/SC/GLaDOS sounds from your existing peon-ping packs
-- Activate the pack automatically
+   ```
+   sound/
+   ├── RA2/ra2 ally/      battle control online.wav, construction complete.wav, ...
+   ├── RA2/ra2 soviet/    same 19 EVA lines, Soviet announcer
+   ├── PeonYes1.wav ... PeonWhat4.wav, ready to work.wav, more work.wav   (Warcraft III)
+   ├── AUTanya_*.wav, SUNatas_*.wav                                      (Red Alert 3)
+   ├── itan*.wav, itap*.wav, tanya-hahahahahaha.wav, kirov-kirov reporting.wav (Red Alert 2)
+   └── RogerThat.mp3, RightAwaySir.mp3
+   ```
 
-Verify it's working:
-```bash
-peon preview --list
-peon preview session.start
-```
+3. Run the installer:
+
+   ```bash
+   git clone https://github.com/keating666/coding-is-gaming
+   cd coding-is-gaming
+   ./install.sh ~/path/to/sound
+   ```
+
+   Missing files are reported, not fatal: the manifest is then built from what was actually copied.
+
+4. Check:
+
+   ```bash
+   peon preview --list
+   peon preview task.complete
+   ```
 
 ---
 
-## How it works
+## Customize
 
-Each of the 7 peon-ping events maps to a pool of sounds. On every trigger, the engine picks one at random (never playing the same sound twice in a row).
+The pack is just seven folders. Drag files in, drag files out, rename them (the file name is the label peon-ping shows), then:
 
-The mapping logic follows game semantics:
-- **Select responses** (`se*`, `VoiSel*`) → `input.required` — unit is being called on
-- **Move/attack responses** (`mo*`, `at*`, `VoiMov*`, `VoiAtk*`) → `task.acknowledge` — unit is executing orders
-- **Create/ready responses** (`cr*`, `rea*`, `VoiCre*`) → `session.start` — unit just spawned
-- **Death/fear responses** (`VoiDie*`, `VoiFear*`, `fe*`) → `task.error` — something went wrong
-- **Pissed/dialog responses** (`dia*`) → `user.spam` — unit has had enough
+```bash
+~/.openpeon/packs/coding-is-gaming/rebuild.sh
+```
+
+No restart needed; the next trigger uses the new list.
+
+To change the curated set in this repo instead, edit `sources.tsv` and run `./rebuild.sh --tsv`, then `./test.sh`.
+
+---
+
+## Tests
+
+```bash
+./test.sh
+```
+
+Unit tests check `sources.tsv` and `openpeon.json`. The integration test installs into a temporary peon directory with synthetic audio. The end-to-end test runs when a real sound folder exists (`SOUND_SRC`, default `~/Downloads/sound`): every installed file must decode, and `rebuild.sh` must reproduce the committed manifest.
 
 ---
 
 ## License
 
-This project (the installer script and openpeon.json manifest) is MIT licensed.
-
-The sound files themselves belong to their respective copyright holders (EA Games, Blizzard Entertainment, Valve). Use them only if you own the original games.
-
----
-
-*Inspired by the idea that writing code and commanding an army feel exactly the same.*
+Installer, manifest and scripts: MIT. Sound files belong to their copyright holders (EA, Blizzard); use them only if you own the games.

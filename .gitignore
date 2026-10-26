@@ -6,3 +6,9 @@ sounds/
 
 # macOS
 .DS_Store
+
+# local tooling config
+CLAUDE.md
+
+# html exports of the READMEs (local md-to-html hook)
+*.html

@@ -1,122 +1,115 @@
 # Coding is Gaming 🎮
 
-> 一款 [peon-ping](https://github.com/peon-ping/peon-ping) 语音包，让你的 Claude Code 会话变成一场 RTS 即时战略游戏。
+**中文 | [日本語](README_JP.md) | [English](README.md)**
 
-每当 Claude 思考、完成任务、等待你回答或遭遇错误，你就会听到一段来自红色警戒、魔兽争霸、星际争霸或 Portal 的随机语音。**470 个声音、7 种事件、永不重复。**
+> 一款 [peon-ping](https://github.com/peon-ping/peon-ping) 语音包：用红警和魔兽的语音，给 Claude Code 的 7 种事件配音。
+
+第二版是精选版。第一版一股脑塞了 470 条，这版只留 38 条：每条 3 秒以内、一听就分得清、按事件含义归类。一个事件一个文件夹，触发时从里面随机抽一条。
 
 ---
 
 ## 你会听到什么
 
-| 事件 | 触发时机 | 示例声音 |
-|------|---------|---------|
-| `session.start` | 新建 Claude Code 会话 | *"Battle Control Online"*、*"基洛夫号，报到"*、农民 *"随时待命"* |
-| `task.acknowledge` | Claude 开始处理任务 | Boris 移动指令、Tanya 攻击回应、苦工 *"Work work"* |
-| `task.complete` | 任务完成 | *"建造完成"*、*"单位晋升"*、GLaDOS *"恭喜恭喜"* |
-| `task.error` | 报错 / 失败 | *"单位损失"*、*"战场控制中断"*、Tanya 阵亡语音 |
-| `input.required` | Claude 需要你的输入 | *"来电传输"*、所有角色的被选中语音 |
-| `resource.limit` | 上下文 / 资源限制 | *"资金不足"*、*"电力不足"*、GLaDOS *"我是个土豆"* |
-| `user.spam` | 你发消息太频繁 | *"警告：核弹已发射"*、*"All your base are belong to us"*、Tanya *"Yeah baby"* |
+| 事件 | 什么时候响 | 台词举例 |
+|------|-----------|---------|
+| `session.start` 开工 | 新开一个 Claude Code 窗口 | Battle control online · 基洛夫报到 · 娜塔莎报到 · 苦工 "Ready to work?" |
+| `task.acknowledge` 收到指令 | 你每发一条消息 | Work work · Okie dokie · Roger that · 谭雅 "Move it out!" |
+| `task.complete` 完成 | Claude 一轮回答结束 | Construction complete · Unit ready · Unit promoted |
+| `task.error` 出错 | 终端命令失败 | Unit lost · 谭雅 "Must resist" |
+| `input.required` 等你操作 | 要你批准或回答 | 苦工 "What you want?" · "More work!" · 谭雅 "You got a target?" |
+| `resource.limit` 要压缩 | 对话太长，上下文即将压缩 | Insufficient funds · Low power |
+| `user.spam` 连发 | 10 秒内连发 3 条 | 核弹警告 · 谭雅大笑 |
 
-## 声音来源
-
-| 游戏 | 角色 / EVA |
-|------|-----------|
-| **红色警戒 2** | EVA（盟军 + 苏联）、Tanya、Boris、Yuri、Yuri Prime、基洛夫、海豹突击队 |
-| **红色警戒 3** | EVA（盟军/苏联/帝国）、Tanya、Natasha |
-| **命令与征服 4** | EVA（GDI + Nod）|
-| **命令与征服：将军** | EVA、经典语音片段 |
-| **魔兽争霸 III** | 兽族苦工、人族农民 |
-| **星际争霸** | Sarah Kerrigan、战列巡洋舰 |
-| **Portal** | GLaDOS |
+来源：红警 2 盟军与苏军 EVA 播音、红警 2/3 谭雅、红警 3 娜塔莎、基洛夫飞艇、魔兽争霸 III 苦工与农民。
 
 ---
 
-## 前置条件
+## 文件结构
 
-1. 安装 **[peon-ping](https://github.com/peon-ping/peon-ping)**
-2. 安装以下标准语音包：
-   ```bash
-   peon packs install peon,peasant,glados,sc_battlecruiser,sc_kerrigan
+```
+coding-is-gaming/
+├── openpeon.json   ← peon-ping 读的清单（脚本生成，不要手改）
+├── sources.tsv     ← 事件 ⇥ 你音频文件夹里的源文件 ⇥ 装进去后的文件名
+├── install.sh      ← 拷音频、装清单、激活语音包
+├── rebuild.sh      ← 按 sounds/ 各文件夹实际内容重新生成 openpeon.json
+└── test.sh         ← 单元 + 集成 + 端到端测试
+```
+
+装好后的语音包：
+
+```
+~/.openpeon/packs/coding-is-gaming/sounds/
+├── session.start/
+├── task.acknowledge/
+├── task.complete/
+├── task.error/
+├── input.required/
+├── resource.limit/
+└── user.spam/
+```
+
+仓库里**不含音频文件**，它们是游戏版权素材。`sources.tsv` 写明了需要哪些文件、从哪来。
+
+---
+
+## 安装
+
+1. 先装好 [peon-ping](https://github.com/peon-ping/peon-ping)。
+2. 把你从游戏里提取的音频放进一个文件夹，结构如下（文件名以 `sources.tsv` 为准）：
+
    ```
-3. 准备好你拥有正版游戏的**红色警戒音频文件**（见下方说明）
+   sound/
+   ├── RA2/ra2 ally/      battle control online.wav、construction complete.wav 等
+   ├── RA2/ra2 soviet/    同样 19 句，苏军播音员
+   ├── PeonYes1.wav … PeonWhat4.wav、ready to work.wav、more work.wav   （魔兽 III）
+   ├── AUTanya_*.wav、SUNatas_*.wav                                   （红警 3）
+   ├── itan*.wav、itap*.wav、tanya-hahahahahaha.wav、kirov-kirov reporting.wav（红警 2）
+   └── RogerThat.mp3、RightAwaySir.mp3
+   ```
+
+3. 跑安装脚本：
+
+   ```bash
+   git clone https://github.com/keating666/coding-is-gaming
+   cd coding-is-gaming
+   ./install.sh ~/你的/sound
+   ```
+
+   缺文件只会提示，不会中断：清单会按实际拷进去的文件生成。
+
+4. 验证：
+
+   ```bash
+   peon preview --list
+   peon preview task.complete
+   ```
 
 ---
 
-## 获取音频文件
+## 自定义
 
-音频文件**不包含在本 repo 中**——它们是各游戏的版权资产。
-
-请从你拥有的正版游戏中自行提取：
-
-- **红色警戒 2 / 尤里的复仇**：用 [XCC Mixer](https://xhp.xwis.net/utilities.php) 解压 `ra2.mix` / `ra2md.mix`
-- **红色警戒 3**：用 [FinalBIG](https://modenc.renegadeprojects.com/FinalBIG) 等工具解压游戏 `.big` 档案
-- **命令与征服 4 / 将军**：方法类似，解压 `.big` 档案
-
-你的红色警戒音频文件夹应具有以下结构：
-```
-red-alert-sounds/
-├── RA2/
-│   ├── ra2 ally/          ← 盟军 EVA 语音
-│   ├── ra2 soviet/        ← 苏联 EVA 语音
-│   └── unit/              ← 单位语音片段
-├── RA3/
-│   ├── ally/              ← Aeva_*.wav
-│   ├── soviet/            ← Seva_*.wav
-│   └── ers/               ← Ieva_*.wav
-├── CC4/                   ← Geva_*.wav, Neva_*.wav
-├── CCG/
-│   ├── speech/
-│   └── audio/
-├── boris/                 ← ibor*.wav
-├── tanya-ra2/             ← itan*.wav, itap*.wav
-├── tanya-ra3/             ← AUTanya_*.wav
-├── natasha/               ← SUNatas_*.wav
-└── yuri/                  ← iyup*.wav, iyur*.wav
-```
-
----
-
-## 安装方法
+语音包就是七个文件夹。往里拖文件、删文件、改名（文件名就是 peon-ping 显示的标签），然后跑：
 
 ```bash
-git clone https://github.com/keating666/coding-is-gaming
-cd coding-is-gaming
-./install.sh /path/to/red-alert-sounds
+~/.openpeon/packs/coding-is-gaming/rebuild.sh
 ```
 
-脚本会自动完成：
-- 复制并重命名所有音频文件
-- 从已安装的 peon-ping 包中借用魔兽 / 星际 / GLaDOS 语音
-- 自动激活本语音包
+不用重启，下一声就生效。
 
-验证是否正常运行：
+想改仓库里的精选集，改 `sources.tsv` 后跑 `./rebuild.sh --tsv`，再跑 `./test.sh`。
+
+---
+
+## 测试
+
 ```bash
-peon preview --list
-peon preview session.start
+./test.sh
 ```
 
----
-
-## 工作原理
-
-7 个 peon-ping 事件各自对应一个声音池。每次触发时，引擎从池中随机抽取一个（同一声音不会连续播放两次）。
-
-映射逻辑遵循游戏语义：
-- **被选中回应**（`se*`、`VoiSel*`）→ `input.required`：单位被呼唤，等待命令
-- **移动/攻击回应**（`mo*`、`at*`、`VoiMov*`、`VoiAtk*`）→ `task.acknowledge`：单位正在执行命令
-- **创建/就绪回应**（`cr*`、`rea*`、`VoiCre*`）→ `session.start`：单位刚刚生成
-- **死亡/恐惧回应**（`VoiDie*`、`VoiFear*`、`fe*`）→ `task.error`：出了问题
-- **被惹烦的对话**（`dia*`）→ `user.spam`：单位受够了
+单元测试检查 `sources.tsv` 与 `openpeon.json`；集成测试用合成音频装进临时目录；端到端测试在有真实音频文件夹时运行（`SOUND_SRC`，默认 `~/Downloads/sound`）：每个装入的文件必须能解码，`rebuild.sh` 必须能还原出仓库里的清单。
 
 ---
 
-## 版权声明
+## 许可
 
-本项目（安装脚本与 openpeon.json 配置文件）采用 MIT 许可证。
-
-音频文件的版权归各自版权方所有（艺电 EA、暴雪娱乐、Valve）。请仅在拥有原版游戏的前提下使用。
-
----
-
-*灵感来自一个朴素的观察：写代码和指挥军队，感觉完全一样。*
+安装脚本、清单与脚本：MIT。音频文件版权归 EA、暴雪所有，仅限拥有原版游戏的玩家自用。

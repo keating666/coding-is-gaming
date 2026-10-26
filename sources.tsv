@@ -1,0 +1,41 @@
+# coding-is-gaming sound sources
+# event<TAB>source path (relative to your sound folder)<TAB>installed file name
+# Edit freely: one line per sound. Then run ./rebuild.sh --tsv to refresh openpeon.json.
+session.start	kirov-kirov reporting.wav	基洛夫-kirov reporting.wav
+session.start	SUNatas_VoiSela.wav	娜塔莎-natasha here.wav
+session.start	RA2/ra2 ally/battle control online.wav	盟军-battle control online.wav
+session.start	RA2/ra2 ally/reinforcements have arrived.wav	盟军-reinforcements have arrived.wav
+session.start	RA2/ra2 soviet/battle control online.wav	苏军-battle control online.wav
+session.start	RA2/ra2 soviet/reinforcements have arrived.wav	苏军-reinforcements have arrived.wav
+session.start	ready to work.wav	苦工-ready to work.wav
+session.start	AUTanya_VoiSelf.wav	谭雅-locked and loaded.wav
+session.start	itansee.wav	谭雅RA2-how about some action.wav
+task.acknowledge	RightAwaySir.mp3	right away sir.mp3
+task.acknowledge	RogerThat.mp3	roger that.mp3
+task.acknowledge	all wright.wav	苦工-alright.wav
+task.acknowledge	PeonYes2.wav	苦工-be happy to.wav
+task.acknowledge	PeonWhat2.wav	苦工-hmm.wav
+task.acknowledge	PeonYes1.wav	苦工-i can do that.wav
+task.acknowledge	PeonYes4.wav	苦工-okie dokie.wav
+task.acknowledge	PeonYes3.wav	苦工-work work.wav
+task.acknowledge	AUTanya_VoiMovg.wav	谭雅-move it out.wav
+task.acknowledge	itanseb.wav	谭雅-you got an order.wav
+task.complete	RA2/ra2 ally/construction complete.wav	盟军-construction complete.wav
+task.complete	RA2/ra2 ally/tech building captured.wav	盟军-tech building captured.wav
+task.complete	RA2/ra2 ally/unit ready.wav	盟军-unit ready.wav
+task.complete	RA2/ra2 soviet/construction complete.wav	苏军-construction complete.wav
+task.complete	RA2/ra2 soviet/unit promoted.wav	苏军-unit promoted.wav
+task.error	RA2/ra2 ally/unit lost.wav	盟军-unit lost.wav
+task.error	RA2/ra2 soviet/unit lost.wav	苏军-unit lost.wav
+task.error	itapred.wav	谭雅-must resist.wav
+input.required	more work.wav	苦工-more work.wav
+input.required	PeonWhat4.wav	苦工-something need doing.wav
+input.required	what easy.wav	苦工-what is it.wav
+input.required	PeonWhat3.wav	苦工-what you want.wav
+input.required	itansed.wav	谭雅-show me the way.wav
+input.required	AUTanya_VoiSele.wav	谭雅-you got a target.wav
+resource.limit	RA2/ra2 ally/low power.wav	盟军-low power.wav
+resource.limit	RA2/ra2 soviet/insufficient funds.wav	苏军-insufficient funds.wav
+resource.limit	RA2/ra2 soviet/low power.wav	苏军-low power.wav
+user.spam	RA2/ra2 ally/warning nuclear missile launched.wav	盟军-nuclear missile launched.wav
+user.spam	tanya-hahahahahaha.wav	谭雅-大笑.wav
