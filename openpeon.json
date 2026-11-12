@@ -14,14 +14,6 @@
     "session.start": {
       "sounds": [
         {
-          "file": "sounds/session.start/基洛夫-kirov reporting.wav",
-          "label": "基洛夫-kirov reporting"
-        },
-        {
-          "file": "sounds/session.start/娜塔莎-natasha here.wav",
-          "label": "娜塔莎-natasha here"
-        },
-        {
           "file": "sounds/session.start/盟军-battle control online.wav",
           "label": "盟军-battle control online"
         },
@@ -44,10 +36,6 @@
         {
           "file": "sounds/session.start/谭雅-locked and loaded.wav",
           "label": "谭雅-locked and loaded"
-        },
-        {
-          "file": "sounds/session.start/谭雅RA2-how about some action.wav",
-          "label": "谭雅RA2-how about some action"
         }
       ]
     },
@@ -62,16 +50,12 @@
           "label": "roger that"
         },
         {
-          "file": "sounds/task.acknowledge/苦工-alright.wav",
-          "label": "苦工-alright"
+          "file": "sounds/task.acknowledge/基洛夫-kirov reporting.wav",
+          "label": "基洛夫-kirov reporting"
         },
         {
           "file": "sounds/task.acknowledge/苦工-be happy to.wav",
           "label": "苦工-be happy to"
-        },
-        {
-          "file": "sounds/task.acknowledge/苦工-hmm.wav",
-          "label": "苦工-hmm"
         },
         {
           "file": "sounds/task.acknowledge/苦工-i can do that.wav",
@@ -86,10 +70,6 @@
           "label": "苦工-work work"
         },
         {
-          "file": "sounds/task.acknowledge/谭雅-move it out.wav",
-          "label": "谭雅-move it out"
-        },
-        {
           "file": "sounds/task.acknowledge/谭雅-you got an order.wav",
           "label": "谭雅-you got an order"
         }
@@ -102,8 +82,8 @@
           "label": "盟军-construction complete"
         },
         {
-          "file": "sounds/task.complete/盟军-tech building captured.wav",
-          "label": "盟军-tech building captured"
+          "file": "sounds/task.complete/盟军-nuclear missile launched.wav",
+          "label": "盟军-nuclear missile launched"
         },
         {
           "file": "sounds/task.complete/盟军-unit ready.wav",
@@ -128,10 +108,6 @@
         {
           "file": "sounds/task.error/苏军-unit lost.wav",
           "label": "苏军-unit lost"
-        },
-        {
-          "file": "sounds/task.error/谭雅-must resist.wav",
-          "label": "谭雅-must resist"
         }
       ]
     },
@@ -150,16 +126,8 @@
           "label": "苦工-what is it"
         },
         {
-          "file": "sounds/input.required/苦工-what you want.wav",
-          "label": "苦工-what you want"
-        },
-        {
           "file": "sounds/input.required/谭雅-show me the way.wav",
           "label": "谭雅-show me the way"
-        },
-        {
-          "file": "sounds/input.required/谭雅-you got a target.wav",
-          "label": "谭雅-you got a target"
         }
       ]
     },
@@ -182,12 +150,16 @@
     "user.spam": {
       "sounds": [
         {
-          "file": "sounds/user.spam/盟军-nuclear missile launched.wav",
-          "label": "盟军-nuclear missile launched"
+          "file": "sounds/user.spam/苦工-alright.wav",
+          "label": "苦工-alright"
         },
         {
-          "file": "sounds/user.spam/谭雅-大笑.wav",
-          "label": "谭雅-大笑"
+          "file": "sounds/user.spam/苦工-hmm.wav",
+          "label": "苦工-hmm"
+        },
+        {
+          "file": "sounds/user.spam/苦工-what you want.wav",
+          "label": "苦工-what you want"
         }
       ]
     }
