@@ -108,6 +108,10 @@
         {
           "file": "sounds/task.error/苏军-unit lost.wav",
           "label": "苏军-unit lost"
+        },
+        {
+          "file": "sounds/task.error/苦工-hmm.wav",
+          "label": "苦工-hmm"
         }
       ]
     },
@@ -152,10 +156,6 @@
         {
           "file": "sounds/user.spam/苦工-alright.wav",
           "label": "苦工-alright"
-        },
-        {
-          "file": "sounds/user.spam/苦工-hmm.wav",
-          "label": "苦工-hmm"
         },
         {
           "file": "sounds/user.spam/苦工-what you want.wav",

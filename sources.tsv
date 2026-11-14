@@ -22,6 +22,7 @@ task.complete	RA2/ra2 soviet/construction complete.wav	苏军-construction compl
 task.complete	RA2/ra2 soviet/unit promoted.wav	苏军-unit promoted.wav
 task.error	RA2/ra2 ally/unit lost.wav	盟军-unit lost.wav
 task.error	RA2/ra2 soviet/unit lost.wav	苏军-unit lost.wav
+task.error	PeonWhat2.wav	苦工-hmm.wav
 input.required	more work.wav	苦工-more work.wav
 input.required	PeonWhat4.wav	苦工-something need doing.wav
 input.required	what easy.wav	苦工-what is it.wav
@@ -30,5 +31,4 @@ resource.limit	RA2/ra2 ally/low power.wav	盟军-low power.wav
 resource.limit	RA2/ra2 soviet/insufficient funds.wav	苏军-insufficient funds.wav
 resource.limit	RA2/ra2 soviet/low power.wav	苏军-low power.wav
 user.spam	all wright.wav	苦工-alright.wav
-user.spam	PeonWhat2.wav	苦工-hmm.wav
 user.spam	PeonWhat3.wav	苦工-what you want.wav
